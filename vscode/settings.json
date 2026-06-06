@@ -1,8 +1,43 @@
 {
-    "editor.fontSize": 14,
-    "editor.tabSize": 2,
-    "editor.renderIndentGuides": false,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true
+  "editor.fontSize": 15,
+
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.wordWrap": "on",
+  "editor.rulers": [88, 120],
+  "editor.linkedEditing": true,
+
+  "editor.inlineSuggest.enabled": true,
+  "editor.parameterHints.enabled": true,
+  "editor.suggestOnTriggerCharacters": true,
+
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.venv": true
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.rulers": [88]
+  },
+  "python.analysis.typeCheckingMode": "basic",
+
+  "terminal.integrated.scrollback": 5000,
+
+  "claudeCode.preferredLocation": "panel",
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none"
 }
