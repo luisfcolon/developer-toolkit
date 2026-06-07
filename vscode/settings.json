@@ -1,6 +1,7 @@
 {
   "editor.fontSize": 15,
-
+  "editor.minimap.enabled": false,
+  
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
