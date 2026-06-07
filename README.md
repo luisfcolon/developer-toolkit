@@ -1,4 +1,4 @@
-# Personal IDE settings for development
+# Developer toolkit
 
 - Sublime
 - Visual Studio Code
@@ -22,4 +22,4 @@ A curated list of installed extensions. — [vscode/extensions.md](vscode/extens
 
 ## Claude
 
-Global Claude Code config. — [claude/README.md](claude/README.md)
+Configuration, conventions, and skills for Claude Code. [README](claude/README.md)
