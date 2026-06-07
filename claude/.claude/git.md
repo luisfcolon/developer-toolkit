@@ -1,0 +1,38 @@
+# Git Conventions
+
+## Commit Message Format
+
+Use conventional commits without scopes:
+
+```
+<type>: <description>
+```
+
+- **description**: Lowercase, imperative mood, no trailing period
+
+## Branch Naming
+
+```
+<type>/<short-description>
+```
+
+Example: `feat/auto-delete-branches`, `fix/login-redirect`
+
+## Rules
+
+- **Never push directly to a protected branch** — always use a feature branch and open a PR. Before pushing, resolve the owner and repo with `gh repo view --json owner,name --jq '"\(.owner.login)/\(.name)"'`, then check if the target branch is protected: `gh api repos/$OWNER/$REPO/branches/$BRANCH --jq '.protected'`. If it returns `true`, stop and open a PR instead.
+- Do not run history-rewriting commands (`push --force`, `rebase`) unless the user explicitly requests it and confirms the branch name. These commands are forbidden on protected branches — no exceptions.
+- Do not run destructive commands such as `reset --hard` unless the user explicitly requests it and confirms the target branch.
+- Before any commit or push, review `git status -sb`, current branch, and `git diff --staged`. Before pushing, run `git fetch` and check for upstream divergence so you can report which commits will be pushed.
+- Do not delete local or remote branches unless explicitly requested by the user.
+- Keep commits atomic and grouped by concern. Avoid mixing refactors, bug fixes, and new features in the same commit when possible.
+- If the user does not state a commit type, infer it from context. If multiple commit types could reasonably apply, ask before committing.
+- If changes include credentials, tokens, private keys, or `.env` files, stop and ask to sanitize before committing.
+- Before committing, run the smallest relevant test suite, linting, or validation commands available for the modified files and report the results.
+
+## PR Creation
+
+- **PR title** must use the same conventional commit format: `<type>: <description>` — lowercase, imperative mood, no trailing period
+- Always open PRs targeting the repo's default branch unless the user specifies otherwise. Resolve it with `gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'`.
+- Assign the PR to the current user unless told otherwise.
+- Include a short summary and a test plan in the PR body.

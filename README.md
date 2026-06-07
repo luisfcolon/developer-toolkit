@@ -2,6 +2,7 @@
 
 - Sublime
 - Visual Studio Code
+- Claude
 
 ## Visual Studio Code
 
@@ -18,3 +19,7 @@ To apply these settings, open your VS Code `settings.json` directly:
 ### Extensions
 
 A curated list of installed extensions. — [vscode/extensions.md](vscode/extensions.md)
+
+## Claude
+
+Global Claude Code config. — [claude/README.md](claude/README.md)
