@@ -1,7 +1,7 @@
 {
   "editor.fontSize": 15,
   "editor.minimap.enabled": false,
-  
+
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
@@ -10,7 +10,6 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.wordWrap": "on",
-  "editor.rulers": [88, 120],
   "editor.linkedEditing": true,
 
   "editor.inlineSuggest.enabled": true,
@@ -31,13 +30,11 @@
 
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true,
-    "editor.rulers": [88]
+    "editor.formatOnSave": true
   },
   "python.analysis.typeCheckingMode": "basic",
 
   "terminal.integrated.scrollback": 5000,
-
   "claudeCode.preferredLocation": "panel",
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "none"
