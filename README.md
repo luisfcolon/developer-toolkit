@@ -2,7 +2,6 @@
 
 - [Claude](#claude)
 - [Cursor](#cursor)
-- Sublime
 - [Visual Studio Code](#visual-studio-code)
 
 ## Visual Studio Code
@@ -17,7 +16,7 @@ A curated list of installed extensions. — [vscode/extensions.md](vscode/extens
 
 ## Cursor
 
-Context-triggered rules for Cursor. — [.cursor/rules/](.cursor/rules/)
+Rules and skills for Cursor. — [.cursor/rules/](.cursor/rules/)
 
 ## Claude
 
