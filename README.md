@@ -2,6 +2,7 @@
 
 - Sublime
 - Visual Studio Code
+- Cursor
 - Claude
 
 ## Visual Studio Code
@@ -20,6 +21,10 @@ To apply these settings, open your VS Code `settings.json` directly:
 
 A curated list of installed extensions. — [vscode/extensions.md](vscode/extensions.md)
 
+## Cursor
+
+Context-triggered rules for Cursor. — [.cursor/rules/](.cursor/rules/)
+
 ## Claude
 
-Configuration, conventions, and skills for Claude Code. [README](claude/README.md)
+Configuration, conventions, and skills for Claude Code. [claude/README.md](claude/README.md)
